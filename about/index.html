@@ -176,12 +176,33 @@ var _hmt = _hmt || [];
 	</div>
 	
 	<!-- comment -->
-	
+	<!-- 
 
-	
+	 -->
 	</div> <!-- col-md-9/col-md-12 -->
 		
 		
+
+	
+		<div id="gitalk-container"></div>
+		<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '36bccaf772fde84c68fc',
+        clientSecret: '4ce9b6fbb03c8bcacdf9971b735423b7dc66dd9a',
+        repo: 'qisi007.github.io',
+        owner: 'liuguisheng',
+        admin: ['liuguisheng'],
+        id: location.pathname,
+        distractionFreeMode: true
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+   
 
 </div><!-- row -->
 
