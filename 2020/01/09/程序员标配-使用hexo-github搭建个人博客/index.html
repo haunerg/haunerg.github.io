@@ -449,25 +449,25 @@ new Valine({
 	
 </div><!-- col-md-3 -->
 <script>
-	let mate = document.querySelector('#toc-wrap');
-	let flag = true;
-	let setClass = function () {
-		let scrollHeight = document.documentElement.scrollTop
-		let offsetTop = mate.offsetTop;
-		(offsetTop - scrollHeight < 0) ? mate.classList.add('toc-fixed') : mate.classList.remove('toc-fixed');
-	}
-	document.addEventListener('scroll', setClass)	
+	// let mate = document.querySelector('#toc-wrap');
+	// let flag = true;
+	// let setClass = function () {
+	// 	let scrollHeight = document.documentElement.scrollTop
+	// 	let offsetTop = mate.offsetTop;
+	// 	(offsetTop - scrollHeight < 0) ? mate.classList.add('toc-fixed') : mate.classList.remove('toc-fixed');
+	// }
+	// document.addEventListener('scroll', setClass)	
 	
 </script>
 
 <style>
-	.toc-fixed {
+	/* .toc-fixed {
 		position: fixed;
 		top: 150px;
 		width: auto;
 		transition: all .5s;
 		z-index: 999;
-	}
+	} */
 </style>
 
 	</div>
@@ -485,8 +485,7 @@ new Valine({
         repo: 'qisi007.github.io',
         owner: 'qisi007',
         admin: 'qisi007',
-        id: location.pathname,
-        distractionFreeMode: true
+        id: location.pathname
     })
     gitalk.render('gitalk-container')
 </script>
